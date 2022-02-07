@@ -1,24 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { SocialPosts } from './SocialPosts';
+import { ReactDOM } from 'react';
+import Modal from 'react-modal'
 
+
+
+Modal.setAppElement(document.getElementById('root') as HTMLElement)
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="thoughts">
+      <h1>My Thoughts</h1>
+
+      </div>
+      
+
+      <SocialPosts></SocialPosts>
+      
+      
     </div>
   );
 }
